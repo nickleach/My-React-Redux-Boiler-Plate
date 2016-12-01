@@ -1,6 +1,6 @@
 {
   "name": "react-boiler-plate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dual list box component for react",
   "main": "devServer.js",
   "scripts": {
