@@ -1,5 +1,5 @@
 {
-  "name": "Nick's React/Redux BoilerPlate",
+  "name": "react-boiler-plate",
   "version": "1.0.0",
   "description": "dual list box component for react",
   "main": "devServer.js",
