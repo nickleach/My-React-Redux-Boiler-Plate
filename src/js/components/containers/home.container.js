@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import radium from 'radium';
-import { addToCounter, subtractFromCounter } from '../../actions/example.actions';
+import { addToCounter, subtractFromCounter, clearCounter } from '../../actions/example.actions';
 
-const HomeContainer = ({ counter, addHandler, subtractHandler, children }) => (
+const HomeContainer = ({ counter, addHandler, subtractHandler, clearHandler, children }) => (
   <div>
     {children && React.cloneElement(children, {
       counter,
       addHandler,
       subtractHandler,
+      clearHandler,
     })}
   </div>
 );
@@ -18,6 +19,7 @@ HomeContainer.propTypes = {
   counter: PropTypes.number,
   addHandler: PropTypes.func,
   subtractHandler: PropTypes.func,
+  clearHandler: PropTypes.func,
 };
 
 const mapStateToProps = (state) => ({
@@ -30,6 +32,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   subtractHandler: () => {
     dispatch(subtractFromCounter());
+  },
+  clearHandler: () => {
+    dispatch(clearCounter());
   },
 });
 

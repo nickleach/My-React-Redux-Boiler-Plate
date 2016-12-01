@@ -1,4 +1,4 @@
-import { ADD_TO_COUNTER, SUBTRACT_FROM_COUNTER } from './actionTypes';
+import { ADD_TO_COUNTER, SUBTRACT_FROM_COUNTER, CLEAR_COUNTER } from './actionTypes';
 
 function addToCounter() {
   return {
@@ -12,7 +12,14 @@ function subtractFromCounter() {
   };
 }
 
+function clearCounter() {
+  return {
+    type: CLEAR_COUNTER,
+  };
+}
+
 export {
   addToCounter,
   subtractFromCounter,
+  clearCounter,
 };

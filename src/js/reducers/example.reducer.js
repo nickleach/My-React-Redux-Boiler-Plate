@@ -1,4 +1,4 @@
-import { ADD_TO_COUNTER, SUBTRACT_FROM_COUNTER } from '../actions/actionTypes';
+import { ADD_TO_COUNTER, SUBTRACT_FROM_COUNTER, CLEAR_COUNTER } from '../actions/actionTypes';
 
 const example = (state = {
   counter: 0,
@@ -11,6 +11,10 @@ const example = (state = {
     case SUBTRACT_FROM_COUNTER:
       return Object.assign({}, state, {
         counter: state.counter - 1,
+      });
+    case CLEAR_COUNTER:
+      return Object.assign({}, state, {
+        counter: 0,
       });
     default:
       return state;
