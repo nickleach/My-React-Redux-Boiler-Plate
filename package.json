@@ -6,7 +6,6 @@
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "build:webpack:qa": "cross-env NODE_ENV=qa webpack --config webpack.config.js",
     "build:webpack:dev": "cross-env NODE_ENV=dev webpack --config webpack.config.js",
     "build": "npm run clean && npm version patch && npm run build:webpack:dev",
     "start": "node devServer.js",
