@@ -1,0 +1,21 @@
+{
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    "react/no-did-update-set-state": 0,
+    "react/no-did-mount-set-state": 0,
+    "one-var": 0,
+    "no-nested-turnary": 0,
+    "no-else-return": 0,
+    "react/jsx-closing-bracket-location": [0, "props-aligned"],
+    "max-len": [2, 160, 2],
+    "no-trailing-spaces": 0,
+    "no-mixed-spaces-and-tabs": 0,
+    "no-param-reassign": 0,
+    "new-cap": 0
+  },
+}
