@@ -45,7 +45,7 @@ switch (TARGET) {
       // necessary for hot reloading with IE:
       'eventsource-polyfill',
       // hot reload server
-      'webpack-dev-server/client?https://localhost:3000',
+      'webpack-dev-server/client?http://localhost:3000',
       'webpack/hot/only-dev-server',
       // main entry
       './src/js/index',

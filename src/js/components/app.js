@@ -13,9 +13,12 @@ class App extends Component {
     const { content } = this.props;
     return (
       <div style={{ minWidth: '100vw' }}>
-        <nav className="navbar navbar-default" style={{ marginBottom: 0 }}>
+        <nav className="navbar navbar-inverse" style={{ marginBottom: 0 }}>
           <div className="container-fluid">
-
+            <div className="navbar-header">
+              <a className="navbar-brand" href="#">My React BoilerPlate</a>
+            </div>
+            <p className="navbar-text navbar-right" style={{ paddingRight: 5 }}> v{ VERSION }</p>
           </div>
         </nav>
           <div style={{ minWidth: '100vw', height: '95vh', display: 'flex', flexFlow: 'row nowrap' }}>
@@ -29,11 +32,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  user: state.user,
-  modal: state.modal,
-  currentApplication: state.application.name,
-  apiVersion: state.application.apiVersion,
-  currentTodDbVersion: state.tod.databases.currentVersion,
+  ...state,
 });
 
 const mapDispatchToProps = (dispatch) => ({
