@@ -12,9 +12,18 @@ function subtractFromCounter() {
   };
 }
 
-function clearCounter() {
+function resetCounter() {
   return {
     type: CLEAR_COUNTER,
+  };
+}
+
+function clearCounter() {
+  return (dispatch, getState) => {
+    const state = getState();
+    if (state.example.counter !== 0) {
+      dispatch(resetCounter());
+    }
   };
 }
 
