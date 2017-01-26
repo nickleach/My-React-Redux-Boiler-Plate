@@ -1,7 +1,3 @@
-## React/Redux Boilerplate
+## QA Engineer Technical Assessment
 
-To run, clone the repo and run ``` npm install ```
-
-To build a deliverable run ``` npm run build ```
-
-there are also some additional scrips for testing, linting, etc. 
+TODO: Write a readme
